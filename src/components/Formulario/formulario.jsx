@@ -15,11 +15,11 @@ function Formulario(props) {
         }}
         >
             <Typography component="h1" variant="h5">
-                Formulário de Login
+                {props.titulo}
             </Typography>
             <Box component="form" sx={{ mt: 1 }} >
-                <TextField fullWidth margin= "normal" label="Email" name="email" variant="filled" />
-                <TextField fullWidth margin="normal" label="Senha" type="password" variant="filled" />
+                <TextField fullWidth margin= "normal" label="Email" name="email" variant="filled" required/>
+                <TextField fullWidth margin="normal" label="Senha" type="password" variant="filled" required/>
                 <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Lembrar-me"
